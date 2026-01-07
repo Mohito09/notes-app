@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Full-Stack Notes Application
 
-## Getting Started
+This project is a **full-stack Notes application** developed as part of an **internship assignment**.  
+It demonstrates practical knowledge of **frontend development**, **backend API creation**, and **database integration** using modern web technologies.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Project Overview
+
+The Notes App allows users to manage notes with full **CRUD (Create, Read, Update, Delete)** functionality.  
+Each note contains a title, content, and creation timestamp, and all data is stored persistently in MongoDB.
+
+The application is built using **Next.js**, where both frontend and backend logic are handled within a single project using API routes.
+
+---
+
+## 🚀 Features Implemented
+
+- Create a new note  
+- View all saved notes  
+- Edit an existing note  
+- Delete a note  
+- Automatic timestamp for each note  
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js (App Router), React
+- **Backend:** Next.js API Routes (Server-side logic)
+- **Database:** MongoDB Atlas
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 🧠 Key Concepts Demonstrated
+
+- Full-stack application architecture using Next.js  
+- RESTful API design (GET, POST, PUT, DELETE)  
+- MongoDB integration with Mongoose  
+- State management using React hooks  
+- Environment variable handling  
+- Clean and modular project structure  
+
+---
+
+## 📁 Project Structure
+```md
+notes-app/
+├── app/
+│ ├── api/notes/route.js # Backend API routes
+│ ├── page.js # Main UI page
+│ ├── layout.js # Root layout
+│ └── globals.css
+├── components/
+│ ├── NoteForm.jsx # Create/Edit note form
+│ └── NoteList.jsx # Notes list UI
+├── lib/
+│ └── mongodb.js # MongoDB connection logic
+├── models/
+│ └── Note.js # Mongoose schema
+├── .env.local
+├── package.json
+└── README.md
 ```
+🌐 Live Deployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project is deployed on Vercel.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🔗 Live URL: https://your-vercel-link.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔗 API Endpoints
 
-## Learn More
+| Method | Endpoint     | Description             |
+| ------ | ------------ | ----------------------- |
+| GET    | `/api/notes` | Fetch all notes         |
+| POST   | `/api/notes` | Create a new note       |
+| PUT    | `/api/notes` | Update an existing note |
+| DELETE | `/api/notes` | Delete a note           |
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎯 Internship Objective
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project was created to demonstrate my ability to:
 
-## Deploy on Vercel
+Build a complete full-stack application
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Design and consume REST APIs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Integrate a NoSQL database
+
+Write clean, maintainable code
+
+Deploy a production-ready application
+
+📄 Note
+
+This project is developed solely for educational and internship evaluation purposes.
+
+
